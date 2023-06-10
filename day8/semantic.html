@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        ul{
+            background-color: rgb(203, 240, 173);
+            overflow: hidden;
+        }
+
+        li{
+            list-style-type: none;
+            /* used to remove the bullrts,bullet design */
+            float: left;
+            /* used to float in a single row .so when u add thsi property bckgrnd clr will hide. so add extra 
+            css prop ,overflow: hidden; so if a property starts overflowing by using more prop on (bucket)*/
+        }
+
+        /* if u want to style individual link use  parent child realtionship */
+        details:hover{
+            background-color: aqua;
+            color: brown;
+            
+        }
+        li a{
+
+             padding: 10px; /* to separate/space */
+            /* margin: 10px; */
+            text-decoration: none; /* to remove dashes on text */
+            color: blue;
+            display: block;
+            font-size: larger;
+            
+        }
+       a:hover{
+        background-color: aquamarine;
+        color: black;
+        padding: 10px;
+       }
+
+       /* h1:hover{
+        background-color: blue;
+       } */
+        /* hover is used to highlight when mouse poiter moves through heading or images.when u hover on the particular text,do wht everu want..increase size,changing colour, */
+    </style>
+</head>
+<body>
+    <!-- semantic elements -->
+    <!-- header
+    main,section,article,fig,figcaption,details,summary aside footer
+
+eg main page of news apaper..it has header,main contenst side content where we put adv -->
+
+<header>
+
+    <nav>
+
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./contact.html">contact us</a></li>
+            <li><a href="./details.html">more details</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main style="float:left; width:67%;background-color: rgb(240, 245, 247); padding: 10px; margin: 0.8px" >
+    <!-- inside main we hv section article figure,figure caption. consider a newspaper padding is space inside box -->
+  <section>
+        <h1>sports section</h1>
+     <article>
+            <h2>IPL News</h2>
+        <figure style="text-align: center;">
+            <img src="https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?auto=compress&cs=tinysrgb&w=600" height="350" width="500" >
+            <figcaption >Lorem ipsum dolor sit amet.</figcaption>
+        </figure>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore iure nemo quaerat numquam veritatis hic.</p>
+     </article>
+
+     <article>
+            <h2>football</h2>
+        <figure style="text-align: center;">
+            <img src="https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=600" height="350" width="500">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+        </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione, nulla ut consequuntur reprehenderit ex cupiditate enim nihil culpa est pariatur dolorum corrupti labore. Veniam at distinctio reprehenderit aliquam laudantium?</p>
+        </article> 
+
+     <article>
+            <h2>hockey</h2>
+        <figure style="text-align: center;">
+            
+        <img src="https://images.pexels.com/photos/163526/field-hockey-player-girls-game-163526.jpeg?auto=compress&cs=tinysrgb&w=600" height="350" width="500">
+        <figcaption >Lorem ipsum dolor sit amet.</figcaption>
+        </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione, nulla ut consequuntur reprehenderit ex cupiditate enim nihil culpa est pariatur dolorum corrupti labore. Veniam at distinctio reprehenderit aliquam laudantium?</p>
+        </article> 
+
+
+ 
+  </section>
+
+
+
+  <!-- details,summary acn also put inside/outside main -->
+  <details style="text-align: justify;">
+    <h2 style="text-align: center;color: blue;">lets write</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officiis cumque laboriosam voluptate quasi quidem delectus fugit quis culpa cum vel alias exercitationem dignissimos quas velit laborum, a corporis voluptas nostrum iure dolores quam! Dignissimos deserunt porro unde at saepe quam velit commodi. Adipisci, facilis alias, dolorum accusamus minima maxime impedit dignissimos ad quod sequi ullam possimus veniam aperiam ducimus quasi veritatis, ea laboriosam aliquid obcaecati ab. Necessitatibus, iusto quae! Sapiente, odio, nulla non similique quae vero magnam eum ullam magni itaque minus accusamus eaque provident voluptatum fugit commodi harum? Eaque provident libero eveniet dicta rerum impedit tempore hic iure.
+    
+    <summary>about lorem
+        
+    </summary>
+  </details>
+
+  <!-- <details>
+something about summary
+    <summary>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sapiente quibusdam voluptatibus, est libero modi dolorum vel unde eligendi laborum, delectus corporis ipsum sequi a accusantium consequuntur rem esse! Saepe dolorum praesentium nemo temporibus, mollitia quas laudantium provident molestias nostrum incidunt dolores! Quas, voluptates! Corporis possimus minima dicta molestias velit cumque ex explicabo, veniam asperiores suscipit eum est autem adipisci quasi consequuntur nam nulla voluptas. Unde itaque doloremque ipsa culpa, mollitia deserunt quasi nam illo officiis non animi! Dolor perferendis velit asperiores accusantium mollitia et repellendus nobis quam officiis reprehenderit sint illum aliquam tempore soluta, cumque sit! Dolorem minima quod excepturi facere explicabo ab repellendus reiciendis sed tenetur labore et unde, eos illum, laboriosam incidunt sequi, dignissimos sunt. Autem, repellat incidunt amet fuga optio odio laborum dolores inventore vel, tempora quibusdam ut repudiandae voluptate. Aspernatur id commodi animi tempore, sunt magnam veritatis debitis, ut assumenda temporibus quaerat expedita quod reprehenderit earum ipsam voluptatum reiciendis odit quis est dolor? Rem consequuntur rerum, maiores expedita laborum possimus, quo assumenda sunt dolore cumque ullam iure excepturi unde quis nisi et illum pariatur eligendi nobis, at asperiores. Nesciunt quod inventore magnam voluptatum ut magni itaque quos! Iusto hic asperiores laborum, maiores sit sunt eaque.
+  </summary> -->
+  </details>
+
+  
+
+
+</main>
+
+<aside style="float:left;width:24%; background-color: rgb(244, 241, 228); padding: 15px;">
+    <h2>Ads</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam?</p>
+    <figure style="text-align: center;">
+         <img src="https://images.pexels.com/photos/1661496/pexels-photo-1661496.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="250">
+        <figcaption >Lorem ipsum dol</figcaption>
+    </figure>
+
+    <h2>Ads</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam?</p>
+    <figure style="text-align: center;">
+         <img src="https://images.pexels.com/photos/1661496/pexels-photo-1661496.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="250">
+        <figcaption >Lorem ipsum</figcaption>
+    </figure>
+
+    <h2>Ads</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam?</p>
+    <figure style="text-align: center;">
+         <img src="https://images.pexels.com/photos/1661496/pexels-photo-1661496.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="250">
+        <figcaption >Lorem ipsum.</figcaption>
+    </figure>
+
+
+
+
+</aside>
+<footer style="float: left; width: 100%; background-color: bisque;">
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quidem commodi magni unde architecto hic repellendus, vero quo similique neque iure facere autem quisquam repellat doloribus. Doloribus eveniet aperiam exercitationem nihil magnam et qui, sit nemo sunt voluptatibus impedit sequi. Quidem magni accusantium culpa unde id eos tenetur reiciendis non molestias eius nostrum illo mollitia vel quia odit tempora a repudiandae deleniti, ullam error aspernatur asperiores dolores. Laboriosam ipsa saepe officiis cumque sed porro quaerat aperiam quo eos! Delectus, ratione animi. Repellat deleniti eius laudantium? Libero dolor iusto, ipsa obcaecati aliquam magnam unde laudantium eos minus dolores veritatis quibusdam necessitatibus.</p>
+</footer>
+
+
+</body>
+</html>
+
+
+<!-- <header>
+    <nav>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <article></article> <article>2</article>
+    </section>
+    <section></section>
+    <section></section>
+
+    <details>
+        <summary>
+        </summary>
+    </details>
+</main>
+
+<aside></aside>
+<footer></footer> -->
