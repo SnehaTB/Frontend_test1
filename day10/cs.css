@@ -1,0 +1,44 @@
+#container{
+    background-color: aquamarine;
+    padding: 12px;
+    text-align: center;
+}
+
+/* *universal sympbol. so each and every element is targeted */
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.card{
+    display: inline-block;
+    width: 27%;
+    background-color: antiquewhite;
+    
+    border-radius: 15px;
+    margin: 20px;
+    /* border radius will help u too tilt the background /curved border */
+
+}
+
+/* in assignment images itself is tilted . so add a class name under image  */
+
+.imgcard img{
+    width: 100%;
+        border-top-right-radius: 15px; 
+        border-top-left-radius: 15px;
+    }
+
+.title{
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.para{
+    padding: 10px;
+    text-align: justify;
+}
+
