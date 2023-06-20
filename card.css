@@ -1,0 +1,17 @@
+#container{
+    background-color: aquamarine;
+    padding: 12px;
+}
+
+/* *universal sympbol. so each and every element is targeted */
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.card{
+    display: inline-block;
+    width: 25%;
+}
