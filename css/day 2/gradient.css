@@ -1,0 +1,35 @@
+/* .grad{
+    background-image: linear-gradient(to top,white,rgb(238, 71, 99),rgb(255, 165, 0),blue,white) ;
+    height: 1000px;
+} */
+
+ .grad{
+    background-image: linear-gradient(to bottom right,violet,indigo,blue,green,yellow,orange,red);
+    height: 600px;
+    text-align: center;
+} 
+
+/* gradient is used to mix some colors lighter /acrylic background */
+
+/* to top,to top left right ,to bottom,to bottom left,right ,to left,to right ,circle
+is used to adjust the bckgrnd colrs,circular ,linear, circle
+u can also use 10deg ,180deg wise*/
+
+/* to top - 0deg
+to bottom - 180deg */
+
+/* .grad{
+    background-image: radial-gradient(blue 30%,white 40%,aqua );
+    height: 600px;
+    text-align: center;
+} */
+
+/* circular shape-- and u can specify the priority of colors and the amount  */
+
+.bu{
+    background-image: linear-gradient(to top left,red,white);
+    padding:10px 20px 10px 20px;
+    border-radius: 5px;
+    margin: 2px;
+    color: aliceblue;
+}

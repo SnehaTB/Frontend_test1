@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-areas:
+    
+    "header header"
+    "sidebar main"
+    "footer footer"
+    "nav nav"
+    "aside button"
+    "side side"
+    ;
+
+    /* here it has 6 rows 2 columns. header spans in 1 row in both columns
+    sidebar in first column, main in 2nd colmn  */
+  grid-template-columns: 100px 1fr; /* Column widths */
+  
+  grid-template-rows: auto 1fr auto 3fr 2fr 1fr; /* Row heights */
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+/* grid-template-columns: 200px 1fr; Column widths 
+This line specifies the widths of the grid columns. The first column has a fixed width of 100 pixels, and the second column has a flexible width represented by "1fr" (one fraction). The flexible unit "fr" distributes the available space proportionally among the fractions. */
+
+.item-1 { grid-area: header; }
+.item-2 { grid-area: sidebar; }
+.item-3 { grid-area: main; }
+.item-4 { grid-area: footer; }
+.item-5 { grid-area: nav; }
+.item-6 { grid-area: aside; }
+.item-7 { grid-area: button; }
+.item-8 { grid-area: side; }
+
+.grid-item {
+  background-color: #eaeaea;
+  padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-1">Item 1</div>
+        <div class="grid-item item-2">Item 2</div>
+        <div class="grid-item item-3">Item 3</div>
+        <div class="grid-item item-4">Item 4</div>
+        <div class="grid-item item-5">Item 5</div>
+        <div class="grid-item item-6">Item 6</div>
+        <div class="grid-item item-7">Item 7</div>
+        <div class="grid-item item-8">Item 8</div>
+      </div>
+</body>
+</html>
+
+<!-- For example, if you have a grid container with three columns and you set the column widths to "1fr", "2fr", and "3fr", it means that the available space
+   will be divided into six equal parts. The first column will take up one part, 
+   the second column will take up two parts, and the third column will take up three parts. -->

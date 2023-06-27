@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  /* Creates 2 equal-sized columns 
+  grid-gap: 10px; }
+  Gap between grid items 
+
+
+.grid-item {
+  background-color: #eaeaea;
+  padding: 10px;
+}  */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); 
+  /* 3 equal-sized columns */
+   grid-template-rows: repeat(2, 150px); 
+  /* 2 rows with a height of 150px */
+  grid-gap: 10px; /* Gap between grid items */
+
+  /* grid-template-columns: repeat(0, 1fr); 
+  u can get multiple rows */
+}
+
+.grid-item {
+  background-color: #eaeaea;
+  padding: 10px;
+}
+
+.grid-item img{
+    border-radius: 20px;
+    
+    width: 100%;
+    height: 90%;
+}
+
+.grid-item span{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+  <div class="grid-item"><span>hey beautiful</span>
+    <img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+  <div class="grid-item"><span>hey beautiful</span><img src="https://images.pexels.com/photos/1453808/pexels-photo-1453808.jpeg?auto=compress&cs=tinysrgb&w=400" >
+  </div>
+
+</div>
+</body>
+</html>
+
+<!-- repeat(5, 1fr): This specifies that the column pattern should be repeated five times,
+     and each repetition should have a size of 1fr. The 1fr means that each column will take up an 
+     equal fraction of the available space. So, if the grid container has a width of 500 pixels, 
+     each column will take up 1/5 or 20% of that width -->

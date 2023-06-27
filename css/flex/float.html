@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .class{
+            border: 4px dashed black;
+        }
+
+        .first{
+            width: 300px;
+            height: 600px;
+            float:left;
+            /* so the pic will move to left, right ,none,inherit*/
+        }
+        .second{ width: 300px;
+            height: 600px;
+            float:left;}
+
+        .third{
+                width: 300px;
+            height: 600px;
+            float:right;
+            }
+        p{
+            /* initial the p was in between the above images. if u use this property p will move away from them  */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        <img class="first" src="https://images.pexels.com/photos/4466205/pexels-photo-4466205.jpeg?auto=compress&cs=tinysrgb&w=400">
+        <img class="second" src="https://images.pexels.com/photos/2567011/pexels-photo-2567011.jpeg?auto=compress&cs=tinysrgb&w=400">
+        <img class="third" src="https://images.pexels.com/photos/1624076/pexels-photo-1624076.jpeg?auto=compress&cs=tinysrgb&w=400">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, suscipit! Id enim quo cumque quam, vero eaque blanditiis voluptates dolores omnis unde cupiditate repellendus. Itaque inventore aspernatur minus voluptate ex vitae doloremque nulla hic! Saepe totam doloremque sunt sed perspiciatis, deserunt est voluptate quaerat quidem asperiores ea non cumque quae, necessitatibus debitis et nobis quia dolore illo voluptatibus aliquid nulla alias esse. Dignissimos quia repellat quo dolore tempore vero ipsa natus, omnis optio facere beatae dolor iure sapiente alias rem officiis voluptatem mollitia earum adipisci eveniet voluptatum quidem, quam, pariatur possimus. Ex possimus repudiandae, veniam adipisci non dolorum porro amet!</p>
+    </div>
+</body>
+</html>
+
+<!-- floa is used to align the container in some direction . float was used before flex  -->

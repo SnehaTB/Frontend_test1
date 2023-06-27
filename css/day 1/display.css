@@ -1,0 +1,101 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+} 
+/* universal selctor. it will change each and every e;lemnt */
+
+html{
+    background-color: bisque;
+    height: 2500px;
+    border: 10px solid red;
+    margin: 70px;
+}
+
+body{
+    background-color: rgb(236, 216, 191);
+    height: 500px;
+    border: 10px solid red;
+    margin: 50px;
+    padding: 30px;
+    /* padding: 10px 20px 20px 10px; */
+}
+
+/* margin is outside,paddinf is inside */
+
+/* padding : 10px 20px 30px 40px */
+/* top,right bottom left*/
+
+.parent{
+  background-color: aquamarine;
+  border: 5px solid blue;
+  height: 350px;
+  margin: 10px;
+
+}
+.parent div{
+  background-color:yellowgreen;
+  border: 5px solid blue;
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  /* display: inline; helps to see in a  aline */
+
+}
+/* all the div inside parent class will get the above css/.child */
+#child1{
+  background-color:rgb(123, 125, 119);
+  border: 5px solid rgb(9, 9, 23);
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  color: deeppink;
+  display: inline-block;
+  width: 200px;
+  /* div is a block element. so using inline we can make block to inline (shrink)
+  inline elemnet cannot use width height ,there is another proprty called 
+  inline block which can use width,height
+
+
+  inline helps to align next to each other rather tahn block  
+  
+  */
+
+}
+
+#child2{
+  background-color:rgb(123, 125, 119);
+  border: 5px solid rgb(9, 9, 23);
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  color: deeppink;
+  display: inline-block;
+  width: 200px;
+}
+
+#child3{
+  background-color:rgb(123, 125, 119);
+  border: 5px solid rgb(9, 9, 23);
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  color: deeppink;
+  display: inline-block;
+  width: 200px;
+}
+/* margin is used to increase the space between 2 elemnts. in this case child 1 and child 2
+if a child1 has 30px margin and child 2 has 10 px margin ,which has highest margin that will be taken into consideration  */
+/* right click on the output and inspect--computed--u can see the boxes-- right click on child --again inspect 
+
+inspect individual elemnt . u can see the height diff. bcz individual elemnt takes the heiht of padding and border. (not morgin)*/
+
+
+/* so if u add this property regardless of padding and height , u will get the same height as given 
+
+box sizing-border box property.
+suppose hxw=200x50, if it has padding 10 and border 5
+200-(20-10)x50-(20-10)=170x20 
+That is y border box property is important .whtever value is given as w and h,tht is taken 
+*/

@@ -1,0 +1,133 @@
+
+
+ header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width:90%;
+    overflow: hidden;
+ }
+
+ .logo img{
+    width:100px;
+    height: 40px;
+    
+}
+
+.button{
+    background-color: rgb(237, 167, 205);
+    color: black;
+    border-radius: 12px;
+    width: 120px;
+    height: 40px;
+    border: 0px;
+    text-align: center;
+}
+
+
+ 
+ li{
+     float: left;
+     list-style-type: none;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+ }
+ 
+ li a{
+     text-decoration: none;
+     padding: 15px;
+     
+     color: grey;
+
+     /* text-align: center; */
+ }
+ 
+ a:hover{
+   text-decoration: underline solid black;
+   color: black;
+ }
+
+ .container{
+   
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: fit-content;
+    width: 75%;
+    padding: 20px;
+    align-items: center;
+
+ }
+ .right img{
+    height: 400px;
+    width: 400px;
+ }
+ .left{
+   
+    width: 50%;
+ }
+ .right{
+    align-items: center;
+    width: 50%;
+ }
+
+ .im{
+    display: flex;
+    flex-direction: column;
+   align-content: space-between;
+    
+ } 
+ .first{
+    display: flex;
+
+    flex-direction: row;
+    background-color: azure;
+    /* padding: 6px; */
+    margin: 2px;
+    border-radius: 6px;
+     justify-content: space-between; 
+ } 
+ .bu{
+ 
+        display: flex;
+        flex-direction: row;
+     
+     
+ }
+
+ .first img{
+    width: 60px;
+    height: 60px;
+ }
+
+ h1{
+    font-size: 60px;
+ }
+
+ 
+
+ .first:hover{
+    transform: scale(1.02);
+    background-color: whitesmoke;
+ }
+
+ .secondbutton{
+    align-items: center;
+    background-color: darkblue;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 3px 6px 3px 6px;
+    height: 40px;
+    width: 100px;
+ }
+
+ .abc img{
+
+    width: 40px;
+    height: 40px;
+ }
+
+ 
+
+ 

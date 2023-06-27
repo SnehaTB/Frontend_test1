@@ -1,0 +1,36 @@
+.image{
+    background-image: url("https://images.pexels.com/photos/3805975/pexels-photo-3805975.jpeg?auto=compress&cs=tinysrgb&w=400");
+height: 650px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+opacity: 0.8;
+
+}
+
+.title{
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    text-align: center;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 30px;
+}
+p{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+/* p{
+    background-attachment: scroll,fixed;
+    background-size: auto,cover;
+    background-image: 76deg,rgb(91, 87, 87) linear-gradient(url("");
+}
+
+for asignment
+
+when u hover on nav , home,initially content =empty,height=0px, after hover height =20px
+use tghe property ::before*/

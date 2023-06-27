@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .paar:hover{
+        background-color: deeppink;
+        color: aqua;
+
+       }
+       /* when u hover on para it changes clr. so its a specific state of ethe elment */
+
+       /* u can give specic css to the first child /last child .but after this if u add p to the list 1 (first child become para).but css property will lost here */
+
+       ul li:first-child{
+        background-color: blue;
+
+       }
+       ul li:last-child{
+        background-color: rgb(153, 255, 0);
+
+       }
+      ul li:nth-child(2n+1){   /* u can put the formula here n=0 ,u 2n+1,2n-1*/
+        background-color: rgb(228, 232, 12);
+
+       }
+
+       h1:nth-of-type(1){
+        background-color: fuchsia;
+    
+       }
+       span:nth-of-type(2n-1){
+        background-color: forestgreen;
+
+       }
+
+       h1:hover:nth-child(1){
+        background-color: indigo;
+       }
+/* inside an elemnt which is the first child ,suppose u hv div ,ul, span , which has multiple h1 
+the first child of each elemnt will get tis css
+similarly p:nth-of-type(2).   if u are using :nth of type it will target all elements
+
+hover can also incorporate with this */
+    </style>
+</head>
+<body>
+    <h1>hai</h1>
+    <div class="paar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, minus!</div>
+    <div class="paar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, minus!</div>
+    <div class="paar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, minus!</div>
+
+    <div class="conatiner">
+
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+
+        <p>helo ghhjhj</p>
+        <p>helo ghhjhj</p>
+        <p>helo ghhjhj</p>
+
+        <span>hellooo</span>
+        <span>hellooo</span>
+        <span>hellooo</span>
+    </div>
+
+    <ul>
+        <p>hai</p>
+        <li>1</li>
+        <li>11</li>
+        <h1>hi</h1>
+        <li>111</li>
+        <li>1</li>
+        <h1>hi</h1>
+        <li>11</li>
+    </ul>
+</body>
+</html>

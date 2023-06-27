@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .children{
+            width: 250px;
+            height: 250px;
+        }
+
+        #child1{
+            border: 2px solid red;
+            background-color: aqua;
+            position: relative;
+            top: 100px;
+            z-index:10;
+        }
+        #child2{
+            border: 2px solid red;
+            background-color: aqua;
+            position: relative;
+            top: 30px;
+            left:50px;
+            z-index:0;
+        }
+        #child3{
+            border: 2px solid red;
+            background-color: aqua;
+            position: relative;
+            top: 0px;
+            left: 70px;
+            z-index:0;
+        }
+        /* who ever has higher z index tht will be visible out.  */
+    </style>
+</head>
+<body>
+    <div class="children" id="child1">one</div>
+    <div class="children" id="child2">two</div>
+    <div class="children" id="child3">three</div>
+</body>
+</html>

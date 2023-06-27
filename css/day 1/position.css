@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    border: 3px solid blue;
+    height: 1500px;
+    margin: 50px;
+}
+
+.parent{
+    border: 3px solid red;
+    margin: 20px;
+}
+
+.child{
+    border: 3px solid green;
+    width: 300px;
+    height:150px;
+    display: inline-block;
+}
+
+
+/* position has 5 values 
+default is static
+absolute,relative,sticky, fixed*/
+
+#child2{
+    background-color: chartreuse;
+    position: relative;
+    top: 70px;
+    left: 0px;
+}
+/* relative means relative to the actual static  values ad  top ,left */
+#child3{
+    background-color: rgb(255, 0, 179);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+/* absolute property : will check if u hvae any ancestors ,then the positioning will be based on the closest ancestor 
+if u give top and right 0px,it will take the main html 
+if u give 50px it will take the body/margin. so it is taking the closest elemnt position property
+if child1--parent(ancestor of child)--main(anc of parent). if none of them are positioned it will take the html element.
+suppose if u give position to parent .then child will move based on parent */
+
+#child4{
+    background-color: rgb(175, 51, 53);
+    position: fixed;
+    top: 200px;
+    right: 0px;
+} 
+/* fixed  no matter how u scrolled , that particual box will be fixed. some website has ads no matter after scrolling to next page
+eg :chatbox  */
+
+#child1{
+    background-color: rgb(12, 67, 4);
+    position: sticky;
+    top: 150px;
+    right: 130px;
+}
+
+/*stiky -- comb of relative +fixed.
+after a part of web page it behaves like relative. outside some region. 
+ */
+
+

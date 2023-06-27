@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 20px;
+        }
+
+        .one{
+            width: 50vw;
+            height: 50vh;
+            background-color: aquamarine;
+        }
+        .two{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(187, 127, 255);
+        }
+        .three{
+            width: 20vw;
+            height: 40vh;
+            background-color: rgb(255, 127, 251);
+        }
+        .id1{
+            font-size: 5em;
+        }
+        .id2{
+            font-size: 2rem;
+        }
+        h1{
+            font-size: 20px;
+        }
+        .container{
+            font-size: 10px;
+        }
+
+        /* id1,id2 are the child of parent container.5em means it depends on parent. 10px * 5 */
+/* viewport height and width */
+
+/* rem depends on the root elemnt . here it is htm;l. font size is 20 px 
+so 2*20px
+ */
+
+ /* width:inherit is copying the width from its parent  */
+
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="container">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <h1>hai</h1>
+        <div class="id1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, totam?</p></div>
+        <div class="id2"><p>Lorem ipsum dolor sit amet.</p></div>
+
+    </div>
+</body>
+</html>

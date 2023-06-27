@@ -1,0 +1,25 @@
+/* .para{
+    font-size: 40px;
+    text-shadow: 2px 2px 5px darkturquoise;
+}
+    /* horizontal,vertical,blurred  */
+ 
+
+.para{
+    font-size: 40px;
+    color: chartreuse;
+    text-shadow: -1px 2px red,2px 5px darkturquoise,1px 2px blueviolet;
+    /* x,y,z 3d coordinates */
+}
+
+.class{
+    width: 400px;
+    height:400px;
+    background-color: aquamarine;
+    /* box-shadow: 2px 3px black; */
+    box-shadow: 2px 3px 3px 3px black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* text and box shadow */

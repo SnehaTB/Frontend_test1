@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: 700px 1fr; 
+  /* Sidebar and main content columns .here we hv 2 column . so it is width*/
+  grid-template-rows: auto 2fr auto; 
+  /* Header, main content, and footer rows .its height of rows*/
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  min-height: 100vh; /* Set minimum height to fill the viewport */
+}
+
+.header {
+  grid-area: header;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <nav class="sidebar">Sidebar</nav>
+        <main class="main">Main Content</main>
+        <footer class="footer">Footer</footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            background-color: aqua;
+            font-size: 30px;
+            color: aliceblue;
+        }
+
+        /* for elemnt use :: so it is targetting specific part of the eelmnt */
+
+        p::first-line{
+            background-color: rgb(64, 255, 0);
+            font-size: 30px;
+            color: aliceblue;
+        }
+
+        /* 2 important prop are before and after.whenever u use this use content  .befor para u add ur content in double quotes
+        so op will be sneha lorem . but when u inspect them u cant se the content , tht is y it is psedo elemt*/
+
+        p::before{
+            content: "sneha";
+            background-color: mediumspringgreen;
+        }
+
+        p::after{
+            content: "sneha";
+            background-color: mediumspringgreen;
+        }
+
+        /* in forms u can see * in red color saying tht it is mandatory. tht is basically doe with this property  */
+
+        P::selection{
+            background-color: gold;
+            font: bold;
+            color: black;
+        }
+        /* when u are selcting the paragraph u can see wht are u selcting  */
+    </style>
+</head>
+<body>
+    <!-- pseudo elemnts and clsss
+    psuedo class: targetting specific state of the elemnt eg hover 
+
+psuedo elemnt: specific part of the eleemnt -->
+
+<h1>haiii</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia doloribus voluptatem, sapiente porro rem accusamus. Quasi sint magni nostrum beatae ex dignissimos eaque est sunt suscipit harum ducimus veritatis sed nihil quisquam aspernatur, a eum aut maxime eius, accusamus minus id. Placeat velit vel nesciunt dolorem illo optio nam, aliquam atque, fugiat ab eligendi aspernatur voluptatibus perspiciatis sit deleniti et cum, maxime quod! Culpa laudantium tempora iusto praesentium, reiciendis, quaerat ullam quasi fugit quas, nostrum quis inventore vero! Facilis nihil adipisci quia vero facere earum consectetur accusantium. Quam quaerat tenetur temporibus! Repudiandae adipisci mollitia accusamus sit ipsam dolore architecto, omnis tenetur earum molestiae quaerat vel quia vitae voluptatum veniam labore. Facilis, quia? Illum distinctio voluptatem, ea, numquam quis, sapiente sunt eligendi ipsam unde at veritatis quisquam fugit placeat impedit cum sequi quod. Quis numquam tenetur temporibus voluptates perferendis eum nesciunt reprehenderit, minima velit qui repellat modi? Est eum ratione sint perferendis enim, pariatur veritatis consequatur quibusdam vitae animi! Quibusdam consectetur blanditiis aspernatur omnis dolore laudantium rerum nobis odit repellendus. Tenetur natus fugit id vero consequuntur veritatis, accusamus et est, necessitatibus sed culpa reiciendis eum adipisci. Quasi praesentium harum atque reprehenderit illum cumque, totam hic necessitatibus quisquam quidem, nisi voluptate.</p>
+
+</body>
+</html>

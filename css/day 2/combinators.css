@@ -1,0 +1,41 @@
+/* 
+1 descendent combinators
+2 child
+3 general sibling
+4 adjacent
+
+
+*/
+/* 1 descendent combinators
+there are 2 h2 element one is inside div other outside. u want to add css to h2 which is inside 
+so thsi h2 is descendant of div */
+
+/* div h2{
+    background-color: blueviolet;
+} */
+
+/* child comb 
+suppose there are 3 h1 elemnt under div . 2 of them are under main element which is under div . i will take only 1  h1 elemnt under div only . diect parent child.remaoing are grand child */
+
+
+/* div>h1{
+    background-color: blue;
+} */
+
+/* general   
+all those elemnt which are next sibiling of that elemt .here div is an elemnt , the next sibiling after div is h1  */
+
+div ~ h1{
+    background-color: brown;
+}
+
+/* adjacent
+
+h3,h1 are adjacent to each other . so h3+h1{} means give css prop of h1 which are NEXT adj to h3 */
+
+h3 + h1{
+    background-color: aquamarine;
+}
+
+
+

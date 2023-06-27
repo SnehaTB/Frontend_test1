@@ -1,0 +1,112 @@
+.cycle{
+    /* transition-delay: 2s;
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+
+    transition: transform 5s ease-in-out 1s; 
+    /* transform,transition duration ,transition function ,delay as a single function like padding 1 1 11) */
+    height: 40%;
+    width: 40%;
+   
+    
+/* transition: transform 5s; */
+/* how long transition takes to move  
+
+transition: transform ease-in-out 5s;
+
+/* it has ease in property to fade in to fade out .
+transform 4s to move  .whtever transform is give below taht is going to apply on transition (time)*/
+    
+    /* this is not the image size. this is the container of image */
+}
+
+.cycle img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container{
+    height: 650px;
+    /* take 650px area. child is cycle . take 50/wht ever % from 650. img is the child of cycle . take 100% of child (cycle) */
+}
+
+/* when u hover on the container ur cycle should move left /right
+
+transform=translatex property to move the cycle in x direction*/
+
+.container:hover .cycle{
+    /* transform: translateX(100%); */
+    /* fully down 100% .if its transition type ur transform here. if its animation type under keyframes*/
+    background-color: chartreuse;
+   
+
+    animation-name: ilovecycling;
+    animation-duration: 1s;
+    /* animation-fill-mode: forwards; */
+    /* here it will hold the value at last position . so it wont move to the start gain.
+    reverse will move it in rev dir */
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 4;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+    /* here the process will start from the start. it wont move backwards. if u remove 33,66% it will start from first */
+
+/* and u can change the width of container to increase the space to move the anime  */
+    
+
+/* like padding u can write all the prop in a combine away 
+animation name,duration ,timing func,delay,iteration,direction,animation fill mode  */
+ animation: ilovecycling 1s cubic-bezier(0.075, 0.82, 0.165, 1) 2s 5 alternate backwards ;
+}
+
+@keyframes ilovecycling {
+    0%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateY(100%);
+    }
+    66%{
+        transform: translateX(100%) translateY(100%);
+    } 
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+
+/* transition: 0.2s none;  transition prop shouldnot give on hover.transition property ha ALL which will 
+    take all the css inside container /hover.  */
+    /* so here it moves rapidly . its not a smooth flow like anime .thsy we are usimg animation */
+/* transition:transition property,transition duration ,transition timimg function
+we already have some cubic beizer inside tiimg function. but u want to customize ,inspec nad manually do tht 
+
+we hv ease in ease out ,ease in out,etc.. when u inspect the output (here go to cycle class, inspect . u can see purple (cubic beizer)ease in. click that .u can manually change the flow 
+
+
+transition ha s a lot of limitation. so there comes animation 
+
+when ur animation just starts do this , second part do something , like if u didvide ur animation duration in different parts u need to put different animation.
+so use the word keyframes outside container class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+

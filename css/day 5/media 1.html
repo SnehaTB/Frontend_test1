@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rectangle{
+            padding:15px;
+            background-color: aquamarine;
+            border-radius: 15px;
+            display:none; 
+        }
+        .heading{
+            font-size: 30px;
+        }
+        .para{
+            font-size: 20px;
+        }
+
+        @media (min-width:200px) and (max-width:300px){
+            #android{
+                display:block;
+                background-color: aquamarine;
+            }
+        }
+        @media (min-width:400px) and (max-width:600px){
+            #iphone{
+                display:block;
+                background-color: chartreuse;
+                
+                
+            }
+        }
+        @media (min-width:700px) and (max-width:1000px){
+            #tablet{
+                display:block;
+                background-color: rgb(153, 0, 255);
+               
+            }
+        }
+        @media (min-width:1100px) and (max-width:1300px){
+            #laptop{
+                display:block;
+                background-color: rgb(255, 0, 0);
+               
+            }
+        }
+        @media (min-width:1400px) and (max-width:1600px){
+            #desktop{
+                display:block;
+                background-color: rgb(244, 248, 10);
+               
+            }
+        }
+        @media only screen and (min-width:1400px) and (max-width:1600px){
+            #super{
+                display:block;
+                background-color: rgb(10, 228, 248);
+               
+            }
+        }
+
+        /* we have only screen option , orientatio option .u can put many condition using and /or*/
+
+        @media (orientation: landscape) and (max-width:1000px){
+            h1{
+                color: rgb(240, 249, 240);
+            }
+        }
+
+        @media (orientation: portrait){
+            h1{
+                color: rgb(12, 169, 236);
+            }
+        }
+
+        /* if u want to print ,we hv print option . when u r printing print the heding as green */
+
+        @media print{
+            h1{
+                color: green;
+            }
+        }
+           
+    /* media is for responsive web page , setting up rules  */
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="rectangle" id="iphone"><h1>iphone</h1></div>
+        <div class="rectangle" id="android"><h1>android</h1></div>
+        <div class="rectangle" id="tablet"><h1>tablet</h1></div>
+        <div class="rectangle" id="laptop"><h1>laptop</h1></div>
+        <div class="rectangle" id="desktop"><h1>desktop</h1></div>
+        <div class="rectangle" id="super"><h1>super computer</h1></div>
+    </div>
+</body>
+</html>
+
+<!-- when u r changing the dim ,right click, inspect , give responsive(2nd button) , chnge the window size -->
+<!-- run this,right click on op,inspect , secon button ,u will see iphone android after reducing the dimension box 200 x 300 -->

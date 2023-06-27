@@ -1,0 +1,167 @@
+/* parent has to be flex inprder to get the child flexible  */
+
+.container{
+    height: 550px;
+   
+    background-color: rgb(9, 230, 156);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+    /* justify content will allign centre on the main axis 
+    align item will align on the cross axis  */
+
+    /* flex is used to align boxes in diff direction like line by line, row wise, column wise
+    
+    regardless of width and height each child will arrange accordingly insisde flex box both rowwise an d 
+    column wise will be different even if the height an d width are smae 
+    
+    row wise-- main axis
+    column-- cross axis 
+    
+    so without flex each box will spread out of box .
+    
+    if u remove 2 boxes also the reamining will adjust automatically*/
+
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 5px; 
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-around;
+    text-align: center;
+}
+
+#box2{
+    order: 3;
+}
+#box3{
+    order: 1;
+}
+#box4{
+    order: 2;
+}
+#box1{
+    order: 4;}
+.bo{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 5px; 
+    align-items: center;
+    justify-content: center;
+
+    
+} 
+/* justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly; */
+/* justify-content: flex-start;  start  */
+
+/* #box1{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 5px;
+    
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(135, 128, 141);
+    padding: 10px;
+    margin: 5px;
+
+}
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(28, 27, 28);
+    padding: 10px;
+    margin: 5px;
+
+}
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(248, 247, 249);
+    padding: 10px;
+    margin: 5px;
+} */
+
+/* overflow--hidden ,
+scrolling ---scrolling bar x and y axis scroll
+visible ,
+auto --only y axis 
+
+if u hv a box and the content is overflow /out of box.*/
+
+/* text overflow --"-----" user defined
+, ellipsis if its hidden it will visble as ... hell....
+clip -it will clip the overflowed thing 
+
+whitespace=norap (when ever u r using overflow prop u should use thsi )*/
+.textflow1{
+    white-space: nowrap;
+    background-color: blueviolet;
+  
+    width: 100px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+.textflow2{
+    white-space: nowrap;
+    background-color: blueviolet;
+  
+    width: 100px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.textflow3{
+    white-space: nowrap;
+    background-color: blueviolet;
+  
+    width: 100px;
+    text-overflow:"......";
+    overflow:hidden;
+}
+.overflow1{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    overflow: auto;
+}
+.overflow2{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+.overflow3{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    overflow: scroll;
+}
+.overflow4{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    overflow: visible;
+}
+.overflow5{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    overflow-x: scroll;
+}

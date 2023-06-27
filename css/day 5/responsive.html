@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 10px;
+            display: flex;
+            /* flex give to parent .so it became inline  */
+            /* flex-direction: row; default flex is row */
+            
+            align-items: center;
+
+        }
+
+        .left{
+            width: 70%;
+            padding: 15px;
+            align-items: center;
+        }
+
+        .left img{
+            width: 100%;
+        }
+
+        .right{
+            width: 70%;
+            padding: 15px; 
+            align-items: center; 
+        }
+
+        .right img{
+            width: 100%;
+        }
+
+        h1{font-size: 60px;
+        text-align: center;}
+
+        p{
+            text-align: center;
+        }
+
+        @media (min-width:400px) and (max-width:700px){
+            .container{
+                flex-direction: column;
+            }
+            .left{
+                width: 50%;
+            }
+            .right{
+                width: 100%;
+                text-align: center;
+            }
+            h1{
+                color: red;
+            }
+            p::selection{
+                color: aquamarine;
+                background-color: azure;
+            }
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left">
+          <img src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&w=400" >
+        </div>
+        <div class="right">
+            <h1>My Doggy!!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id fugit magnam sunt, fuga eos quidem sit ex saepe aspernatur, exercitationem illum, accusantium ipsa nisi maiores officiis. Repellendus, quasi quos.</p>
+        </div>
+    </div>
+</body>
+</html>
